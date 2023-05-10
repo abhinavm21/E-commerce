@@ -8,9 +8,17 @@ from .serializers import ProductSerializer, UserAddSerializer, UserSerializer, U
 @api_view(['GET'])
 def intro(request):
     routes = [
-            'Get /api',
-            'Get /api/user',
-            'GET /api/products'
+            'GET /api',
+            'GET /api/products',
+            'GET /api/products/<int:pk>',
+            'GET /api/create-product',
+            'GET /api/update-product/<int:pk>',
+            'GET /api/delete-product/<int:pk>',
+            'GET /api/customers',
+            'GET /api/customer/<int:pk>'
+            'GET /api/create-customer',
+            'GET /api/update-customer/<int:pk>',
+            'GET /api/delete-customer/<int:pk>',
             ]
     return Response(routes)
 
