@@ -1,3 +1,4 @@
 # E-Commerce 
 
-- This is a e-commerce site for Faya assignment
+- This is an e-commerce site for Faya assignment
+- This is built using Django backend
